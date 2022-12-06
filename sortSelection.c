@@ -2,7 +2,6 @@
 #include<stdlib.h>
 #include<omp.h>
 #include<math.h>
-#include<time.h>
 
 void main() {
     int n=100;
