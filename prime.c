@@ -17,6 +17,13 @@ void main() {
     while(i<=n) {
         if(isPrime(x)) {
             primes[i]=x;
+            /*
+            The omp atomic directive allows access 
+            of a specific memory location atomically. 
+            It ensures that race conditions are avoided 
+            through direct control of concurrent threads that 
+            might read or write to or from the particular memory location
+            */
             #pragma omp atomic
             i++;
         }
